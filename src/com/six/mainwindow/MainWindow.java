@@ -1,7 +1,11 @@
 package com.six.mainwindow;
 
+import com.six.helloworld.XiaoXing;
+
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class MainWindow extends JFrame {
     //创建构造方法构建窗体对象
@@ -18,11 +22,17 @@ public class MainWindow extends JFrame {
         //创建画板对象
         JPanel helloJPanel = new JPanel();
         //创建按钮对象
-        JButton okJButton = new JButton("确定");
+        JButton xiaoxingJButton = new JButton("确定");
         JButton defaultJButton = new JButton("取消");
-        //将按钮添加到画板
-        helloJPanel.add(okJButton);
+        //将按钮添加到画板上
+        helloJPanel.add(xiaoxingJButton);
         helloJPanel.add(defaultJButton);
+        xiaoxingJButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                XiaoXing xiaoxingWindow = new XiaoXing("xiaoxing");
+            }
+        });
         //将画板添加到窗体上
         setContentPane(helloJPanel);
         //设置窗口显示
