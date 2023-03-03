@@ -1,16 +1,20 @@
-package com.six.helloworld;
+package com.six.mainwindow;
 
 import javax.swing.*;
+import java.awt.*;
 
-public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println("hello world");
-        //创建窗口对象
-        JFrame helloJFrame = new JFrame("芭娜娜");
+public class MainWindow extends JFrame {
+    //创建构造方法构建窗体对象
+    public MainWindow(String title) throws HeadlessException {
+        super(title);
+        init();
+    }
+    //窗体初始化
+    public void init(){
         //设置窗口大小
-        helloJFrame.setSize(500,500);
+        setSize(500,500);
         //设置窗口关闭按钮动作
-        helloJFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         //创建画板对象
         JPanel helloJPanel = new JPanel();
         //创建按钮对象
@@ -20,8 +24,8 @@ public class HelloWorld {
         helloJPanel.add(okJButton);
         helloJPanel.add(defaultJButton);
         //将画板添加到窗体上
-        helloJFrame.setContentPane(helloJPanel);
+        setContentPane(helloJPanel);
         //设置窗口显示
-        helloJFrame.setVisible(true);
+        setVisible(true);
     }
 }
