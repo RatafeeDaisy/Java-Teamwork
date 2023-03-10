@@ -1,5 +1,7 @@
 package com.six.mainwindow;
 
+import com.six.helloworld.Ricky;
+import com.six.helloworld.TaoTao;
 import com.six.helloworld.XiaoXing;
 
 import javax.swing.*;
@@ -23,15 +25,39 @@ public class MainWindow extends JFrame {
         JPanel helloJPanel = new JPanel();
         //创建按钮对象
         JButton xiaoxingJButton = new JButton("晓星");
+        JButton TaoTaoJButton = new JButton("TaoTao");
+        JButton RickyJButton = new JButton("Ricky");
+        JButton LcrJButton = new JButton("Lcr");
         JButton defaultJButton = new JButton("取消");
         //将按钮添加到画板上
         helloJPanel.add(xiaoxingJButton);
+        helloJPanel.add(TaoTaoJButton);
+        helloJPanel.add(RickyJButton);
+        helloJPanel.add(LcrJButton);
         helloJPanel.add(defaultJButton);
         //监听
         xiaoxingJButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 XiaoXing XiaoXing = new XiaoXing("xiaoxing");
+            }
+        });
+        TaoTaoJButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                TaoTao taotao = new TaoTao("taotao");
+            }
+        });
+        RickyJButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                //Ricky
+            }
+        });
+        LcrJButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                //Lcr
             }
         });
         //将画板添加到窗体上
