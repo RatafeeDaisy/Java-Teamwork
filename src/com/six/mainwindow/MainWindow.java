@@ -22,15 +22,16 @@ public class MainWindow extends JFrame {
         //创建画板对象
         JPanel helloJPanel = new JPanel();
         //创建按钮对象
-        JButton xiaoxingJButton = new JButton("确定");
+        JButton xiaoxingJButton = new JButton("晓星");
         JButton defaultJButton = new JButton("取消");
         //将按钮添加到画板上
         helloJPanel.add(xiaoxingJButton);
         helloJPanel.add(defaultJButton);
+        //监听
         xiaoxingJButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                XiaoXing xiaoxingWindow = new XiaoXing("xiaoxing");
+                XiaoXing XiaoXing = new XiaoXing("xiaoxing");
             }
         });
         //将画板添加到窗体上
