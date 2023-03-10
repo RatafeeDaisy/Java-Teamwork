@@ -51,7 +51,7 @@ public class MainWindow extends JFrame {
         RickyJButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                //Ricky
+                Ricky ricky = new Ricky("ricky");
             }
         });
         LcrJButton.addActionListener(new ActionListener() {
