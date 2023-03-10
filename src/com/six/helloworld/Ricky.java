@@ -16,17 +16,17 @@ public class Ricky extends JFrame {
         //设置窗口关闭按钮动作
         setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
         //创建画板对象
-        JPanel xiaoxingJPanel = new JPanel();
+        JPanel RickyJPanel = new JPanel();
         //标签控件
         JLabel myWordsLabel = new JLabel("It is a small world");
         //标签控件放画板上
-        xiaoxingJPanel.add(myWordsLabel);
+        RickyJPanel.add(myWordsLabel);
         //输入框
         JTextField inputWords = new JTextField(15);
-        xiaoxingJPanel.add(inputWords);
+        RickyJPanel.add(inputWords);
         //按钮
         JButton showButton = new JButton("show");
-        xiaoxingJPanel.add(showButton);
+        RickyJPanel.add(showButton);
         //监听
         showButton.addActionListener(new ActionListener() {
             @Override
@@ -35,7 +35,7 @@ public class Ricky extends JFrame {
             }
         });
         //将画板添加到窗体上
-        setContentPane(xiaoxingJPanel);
+        setContentPane(RickyJPanel);
         //设置窗口显示
         setVisible(true);
     }
