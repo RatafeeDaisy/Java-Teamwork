@@ -6,6 +6,7 @@ new FormModel {
 		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
 			name: "this"
 			"title": "Ricky"
+			"visible": true
 			add( new FormComponent( "javax.swing.JLabel" ) {
 				name: "label1"
 				"text": "越快越强"

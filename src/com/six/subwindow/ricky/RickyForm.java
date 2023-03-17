@@ -29,6 +29,7 @@ public class RickyForm extends JFrame {
 
         //======== this ========
         setTitle("Ricky");
+        setVisible(true);
         var contentPane = getContentPane();
         contentPane.setLayout(null);
 
