@@ -51,6 +51,7 @@ public class MainForm extends JFrame {
         //======== this ========
         setTitle("Bananice");
         setVisible(true);
+        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         var contentPane = getContentPane();
         contentPane.setLayout(null);
 

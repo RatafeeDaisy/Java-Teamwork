@@ -8,6 +8,7 @@ new FormModel {
 			"$sizePolicy": 1
 			"title": "Bananice"
 			"visible": true
+			"defaultCloseOperation": 3
 			add( new FormComponent( "javax.swing.JButton" ) {
 				name: "XiaoxingButton"
 				"text": "Xiaoxing"
