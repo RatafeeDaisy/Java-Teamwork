@@ -1,0 +1,43 @@
+JFDML JFormDesigner: "8.0.3.0.246" Java: "11.0.10" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "this"
+			"title": "XiaoXing"
+			"visible": true
+			"$sizePolicy": 1
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "myWorld"
+				"text": "It is a small world"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 125
+				"y": 70
+				"width": 245
+				"height": 35
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "inputMyworld"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 120
+				"y": 110
+				"width": 260
+				"height": 45
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "showButton"
+				"text": "显示"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "show", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 270
+				"y": 170
+				"width": 110
+				"height": 30
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 445, 295 )
+		} )
+	}
+}
