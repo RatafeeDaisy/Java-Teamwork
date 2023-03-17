@@ -5,6 +5,7 @@
 package com.six.subwindow.ricky;
 
 import java.awt.*;
+import java.awt.event.*;
 import javax.swing.*;
 
 /**
@@ -15,12 +16,34 @@ public class RickyForm extends JFrame {
         initComponents();
     }
 
+    private void button1(ActionEvent e) {
+        // TODO add your code here
+        label1.setText(textField1.getText());
+    }
+
     private void initComponents() {
         // JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents  @formatter:off
+        label1 = new JLabel();
+        textField1 = new JTextField();
+        button1 = new JButton();
 
         //======== this ========
+        setTitle("Ricky");
         var contentPane = getContentPane();
         contentPane.setLayout(null);
+
+        //---- label1 ----
+        label1.setText("\u8d8a\u5feb\u8d8a\u5f3a");
+        contentPane.add(label1);
+        label1.setBounds(20, 20, 205, 30);
+        contentPane.add(textField1);
+        textField1.setBounds(20, 60, 315, 35);
+
+        //---- button1 ----
+        button1.setText("\u663e\u793a");
+        button1.addActionListener(e -> button1(e));
+        contentPane.add(button1);
+        button1.setBounds(260, 115, 93, 45);
 
         {
             // compute preferred size
@@ -42,5 +65,8 @@ public class RickyForm extends JFrame {
     }
 
     // JFormDesigner - Variables declaration - DO NOT MODIFY  //GEN-BEGIN:variables  @formatter:off
+    private JLabel label1;
+    private JTextField textField1;
+    private JButton button1;
     // JFormDesigner - End of variables declaration  //GEN-END:variables  @formatter:on
 }
